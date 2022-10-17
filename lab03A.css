@@ -1,63 +1,140 @@
 html, 
 body {
-    height: 90%;
+    width: 100%;
 }
 
-.container {
+/* .container {
     background-color: blue;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-rows: 10% auto 20% 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 10% auto 20% 10%; 
     height: 100%;
 
+} */
+.container {
+    height: 100%;
 }
+ .con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+} 
+.headerc {
+    height: 10%;
+}
+.headerc > * {
+    flex: 100%;
+}
+
 .header-left {
     background-color: grey;
-    grid-column: 1/7;
+}
+.Name {
+    text-align: center;
+}
+.Animal {
+    text-align: center;
 }
 .header-right {
-    background-color: yellow;
-    grid-column: 7/span 6;
+    background-color: yellow;  
+    
 }
+
 .main-body {
     background-color: green;
-    grid-column: 1/span 12;
-    grid-row: 2;
+    height: 60%;
+    font-size: larger;
     
-    
+}
+
+.asidec {
+    height: 20%;
+}
+.asidec > * {
+    flex: 100%;
 }
 .details-left {
     background-color: darkorchid;
-    grid-row: 3;
-    grid-column: 1/span 4;
+   
+    width: 100%;
+    object-fit: contain;
 }
 .details-middle {
-    background-color: red;
-    grid-row: 3;
-    grid-column: 5/span 4;
+    background-color: red; 
+    width: 100%;
+    
+    object-fit: contain;
 }
 .details-right {
     background-color: cyan;
-    grid-row: 3;
-    grid-column: 9/span 4;
+}
+
+img {
+    object-fit: contain;
+    width: 30%;
+}
+
+.footc {
+    height: 20%;
+}
+.footc > * {
+    flex: 100%;
 }
 .foot-top-left {
     background-color: chartreuse;
-    grid-row: 4;
-    grid-column: 1/span 3;
 }
 .foot-top-right {
-    background-color: maroon;
-    grid-row: 4;
-    grid-column: 4/span 3;
+    background-color: maroon; 
 }
 .foot-bottom-left {
-    background-color: orange;
-    grid-row: 4;
-    grid-column: 7/span 3;
+    background-color: orange;  
 }
 .foot-bottom-right {
-    background-color: chartreuse;
-    grid-row: 4;
-    grid-column: 10/span 3;
+    background-color: chartreuse;  
+}
+
+@media only screen and (min-width :800px)
+/*tablet*/
+{
+    .headerc > * {
+        flex: 100%;
+    }
+    .asidec > * {
+        flex: 100%;
+        
+    }
+    .footc > * {
+        flex: 50%;
+    }
+    img {
+        width: 30%;
+    }
+    
+}
+@media only screen and (min-width :900px)
+/*desktop*/
+{
+    .headerc > * {
+        flex: 50%;
+    }
+    .asidec > * {
+        flex: 33.33%;
+    }
+    .footc > * {
+        flex: 25%;
+    }
+    img {
+        width: 20%;
+    }
+    .Animal {
+        float: left;
+        margin-left: 10px;
+    }
+    .Name {
+        float: right;
+        margin-right: 10px;
+    }
 }
