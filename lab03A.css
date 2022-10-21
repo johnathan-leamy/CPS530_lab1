@@ -59,23 +59,23 @@ body {
 .details-left {
     background-color: darkorchid;
    
-    width: 100%;
-    object-fit: contain;
+    /* width: 100%;
+    object-fit: contain; */
 }
 .details-middle {
     background-color: red; 
-    width: 100%;
+    /* width: 100%;
     
-    object-fit: contain;
+    object-fit: contain; */
 }
 .details-right {
     background-color: cyan;
 }
-
+/* 
 img {
     object-fit: contain;
     width: 30%;
-}
+} */
 
 .footc {
     height: 20%;
@@ -87,7 +87,7 @@ img {
     background-color: chartreuse;
 }
 .foot-top-right {
-    background-color: maroon; 
+    background-color: hotpink; 
 }
 .foot-bottom-left {
     background-color: orange;  
@@ -96,24 +96,7 @@ img {
     background-color: chartreuse;  
 }
 
-@media only screen and (min-width :800px)
-/*tablet*/
-{
-    .headerc > * {
-        flex: 100%;
-    }
-    .asidec > * {
-        flex: 100%;
-        
-    }
-    .footc > * {
-        flex: 50%;
-    }
-    img {
-        width: 30%;
-    }
-    
-}
+
 @media only screen and (min-width :900px)
 /*desktop*/
 {
@@ -126,9 +109,9 @@ img {
     .footc > * {
         flex: 25%;
     }
-    img {
+    /* img {
         width: 20%;
-    }
+    } */
     .Animal {
         float: left;
         margin-left: 10px;
